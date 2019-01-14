@@ -69,6 +69,18 @@ h1, h2, h3, h4, h5 {
   margin: 0 auto;
 }
 
+@media ( max-width: 800px ) {
+    .container {
+        width: 800px;
+    }
+}
+
+@media ( max-width: 500px ) {
+    .container {
+        width: 500px;
+    }
+}
+
 /* header */
 
 header nav {
@@ -132,6 +144,12 @@ header .logo {
 .cta img {
   display: inline-block;
   margin-top: 69px;
+}
+
+@media ( max-width: 800px ) {
+    .cta img {
+        display: none;
+    }
 }
 
 .main-content {
