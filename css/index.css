@@ -71,13 +71,13 @@ h1, h2, h3, h4, h5 {
 
 @media ( max-width: 800px ) {
     .container {
-        width: 800px;
+        width: 90%;
     }
 }
 
 @media ( max-width: 500px ) {
     .container {
-        width: 500px;
+        width: 90%;
     }
 }
 
@@ -99,6 +99,13 @@ header nav {
   width: 691px;
   vertical-align: top;
   margin-top: 35px;
+}
+
+@media (max-width: 800px ) {
+    header nav {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 header nav a {
@@ -133,6 +140,13 @@ header .logo {
 }
 
 /* cta */
+
+@media ( max-width: 800px ) {
+    .cta {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 .cta .cta-text {
   display: inline-block;
@@ -175,8 +189,23 @@ header .logo {
   padding-top: 39px;
 }
 
+@media ( max-width: 800px ) {
+    .main-content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
 .main-content .top-content {
   padding: 0 10px;
+}
+
+@media ( max-width: 800px ) {
+    .main-content .top-content {
+        display: flex;
+        width: 100%;
+    }
 }
 
 .main-content .top-content .text-content {
@@ -193,15 +222,34 @@ header .logo {
   margin-top: 45px;
 }
 
+@media (max-width: 800px ) {
+    .main-content .middle-img {
+        display: flex;
+        width: 100%;
+    }
+}
+
 .main-content .bottom-content {
   margin-top: 37px;
   padding: 0 10px;
+}
+
+@media ( max-width: 800px ) {
+    .main-content .bottom-content {
+        display: flex;
+    }
 }
 
 .main-content .bottom-content .text-content {
   width: 275px;
   display: inline-block;
   margin-right: 12px;
+}
+
+@media ( max-width: 800px ) {
+    .main-content .bottom-content .text-content {
+        width: 100%;
+    }
 }
 
 .main-content .bottom-content .text-content:last-child {
